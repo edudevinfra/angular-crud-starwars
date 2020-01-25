@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+      <div *ngFor="let film of films" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{film.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Episódio: {{film.episode_id}}</h6>
+            <p class="card-text">{{film.director}}</p>
+            <a href="#" class="card-link">{{film.producer}}</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+          <app-films-detail>[id] = film.episode_id</app-films-detail>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+
+
+
+<!--
+  <div>
+  Exemplo de carregamento da lista de filmes
+  <ul>
+    <li *ngFor="let film of films">
+      {{film.title}}<br>
+      {{film.episode_id}}<br>
+      {{film.opening_crawl}}<br>
+      {{film.director}}<br>
+      {{film.producer}}<br>
+      {{film.release_date}}<br>
+    </li>
+  </ul>
+  
+</div>
+-->
